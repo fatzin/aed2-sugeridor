@@ -6,8 +6,8 @@
 
 /*
 
-    Arquivo de header com todas as declarações de funçoes
-    para a construçao da arvore
+    Arquivo de header com todas as declarações de classes
+    e funções para a construçao da arvore
 
 */
 class Node {
