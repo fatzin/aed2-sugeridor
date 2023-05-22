@@ -42,15 +42,22 @@ int main() {
         std::cin >> prefix;
 
         if (prefix == "0") {
+			std::cout << "Encerrando o programa. . ." << std::endl;
             break;
         }
         //atribui ao vetor resultado todas as strings encontradas com o prefixo pedido
         resultado = avl.search(prefix);
+        //verificação se encontrou algum prefixo na árvore, senão é printada a seguinte mensagem
+        if(resultado.size() == 0){
+			std::cout << "Nenhuma palavra com o prefixo foi encontrada" << std::endl;
+		}else{
         std::cout << "Palavras correspondentes:" << std::endl;
         //printa todas as palavras do vetor resultado
         for (const std::string& palavra : resultado) {
             std::cout << palavra << std::endl;
-        }
+            
+			}
+		}
         std::cout << "\n";
     }
 
